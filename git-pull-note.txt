@@ -1,0 +1,10 @@
+git pull
+現在我們已經知道如何利用 git fetch 從 remote 抓取 commit，讓我們來看一下如何將這些 commit 更新到我們的檔案！
+
+只要在你的 local 有 fetch 到新的 commit，便有很多方法可以做到這件事情，你可以把它們視為在其它 branch 上面的一般的 commit，這表示你可以執行像這樣子的指令:
+
+git cherry-pick o/main
+git rebase o/main
+git merge o/main
+等等‧‧‧
+事實上，一次下載 (fetch) remote 的更新並且合併（merge） 這些更新在 git 裡面是很常見的事情！這個命令叫作 git pull。
